@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Countdown</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        
+.poppins-thin {
+  font-family: "Poppins", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    </style>
+</head>
+<body id="countdowns" class=" min-h-screen bg-slate-950 text-white mx-32 poppins-regular max-w-7xl mx-auto px-3 md:px-0 py-12 flex items-center">
+
+    <div class="flex flex-col gap-y-5  md:grid lg:grid-cols-2 gap-5   justify-center  lg:min-w-[800px] ">
+        <div class="md: col-span-2 mb-10 ">
+            <h1 class="text-5xl text-center font-bold">Countdown </h1>
+        </div>
+        <div class="bg-gray-900 p-3 lg:p-5 rounded-xl shadow-xl overflow-hidden ">
+            <div class="text-center text-2xl">
+                <h2 class="text-2xl">Information and Communication Technology </h2>
+                <h3 class="mt-3 text-slate-200">(Paper-1)</h3>
+            </div>
+            <div id="exam1" class="grid grid-cols-4 gap-x-3 lg:gap-x-5 mt-5">
+            
+            </div>
+            <div  class="grid grid-cols-4 gap-x-5 mt-2 text-center">
+                <div class="">Days</div>
+                <div class="">Hours</div>
+                <div class="">Minutes</div>
+                <div class="">Seconds</div>
+            </div>
+            <h3 class="text-center text-lg lg:text-2xl mt-4">
+                May 8,2025 <br>(2:00 PM - 5:00 PM)
+            </h3>
+        </div>
+
+        <div class="bg-gray-900 p-3 lg:p-5 rounded-xl shadow-xl overflow-hidden ">
+            <div class="text-center text-2xl">
+                <h2 class="text-2xl">Information and Communication Technology </h2>
+                <h3 class="mt-3 text-slate-200">(Paper-2)</h3>
+            </div>
+            <div id="exam2" class="grid grid-cols-4 gap-x-3 lg:gap-x-5 mt-5">
+            
+            </div>
+            <div  class="grid grid-cols-4 gap-x-5 mt-2 text-center">
+                <div class="">Days</div>
+                <div class="">Hours</div>
+                <div class="">Minutes</div>
+                <div class="">Seconds</div>
+            </div>
+            <h3 class="text-center text-lg lg:text-2xl mt-4">
+                December 5,2025 <br>(2:00 PM - 5:00 PM)
+            </h3>
+        </div>
+
+        <div class="bg-gray-900 p-3 lg:p-5 rounded-xl shadow-xl overflow-hidden ">
+            <div class="text-center text-2xl">
+                <h2 class="text-2xl">Computer Science</h2>
+                <h3 class="mt-3 text-slate-200">(Paper-1)</h3>
+            </div>
+            <div id="exam3" class="grid grid-cols-4 gap-x-3 lg:gap-x-5 mt-5">
+            
+            </div>
+            <div  class="grid grid-cols-4 gap-x-5 mt-2 text-center">
+                <div class="">Days</div>
+                <div class="">Hours</div>
+                <div class="">Minutes</div>
+                <div class="">Seconds</div>
+            </div>
+            <h3 class="text-center text-lg lg:text-2xl mt-4">
+                May 9,2025 <br>(2:00 PM - 5:00 PM)
+            </h3>
+        </div>
+
+        <div class="bg-gray-900 p-3 lg:p-5 rounded-xl shadow-xl overflow-hidden ">
+            <div class="text-center text-2xl">
+                <h2 class="text-2xl">Computer Science</h2>
+                <h3 class="mt-3 text-slate-200">(Paper-2)</h3>
+            </div>
+            <div id="exam4" class="grid grid-cols-4 gap-x-3 lg:gap-x-5 mt-5">
+            
+            </div>
+            <div  class="grid grid-cols-4 gap-x-5 mt-2 text-center">
+                <div class="">Days</div>
+                <div class="">Hours</div>
+                <div class="">Minutes</div>
+                <div class="">Seconds</div>
+            </div>
+            <h3 class="text-center text-lg lg:text-2xl mt-4">
+                December 5,2025 <br>(2:00 PM - 5:00 PM)
+            </h3>
+        </div>
+    </div>
+    <!-- <div class="bg-blue-900 p-8 rounded-lg shadow-lg text-center">
+        <h1 class="text-3xl font-bold mb-4">Countdown to Exam Day</h1>
+        <div id="countdown" class="text-2xl font-semibold"></div>
+    </div> -->
+
+    <script>
+        const exams = [
+        { id: "exam1", name: "Exam 1", date: "2025-05-08T00:00:00" },
+            { id: "exam2", name: "Exam 2", date: "2025-11-15T00:00:00" },
+            { id: "exam3", name: "Exam 3", date: "2025-05-09T00:00:00" },
+            { id: "exam4", name: "Exam 4", date: "2025-09-05T00:00:00" }
+        ];
+
+        function startCountdown(exam) {
+            function updateCountdown() {
+                const now = new Date().getTime();
+                const examDate = new Date(exam.date).getTime();
+                const timeLeft = examDate - now;
+
+                if (timeLeft < 0) {
+                    document.getElementById(exam.id).innerHTML = `${exam.name}: Exam time!`;
+                    return;
+                }
+
+                const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+                document.getElementById(exam.id).innerHTML = `
+                <div id="ict1day" class="bg-orange-500 text-white px-3 py-2 text-2xl md:text-4xl font-bold rounded-xl shadow-lg text-center">
+                    ${days}
+                </div>
+                <div  id="ict1hour" class="bg-orange-500 text-white px-3 py-2 text-2xl md:text-4xl font-bold rounded-xl shadow-lg text-center">
+                     ${hours}
+                </div>
+                <div  id="ict1min" class="bg-orange-500 text-white px-3 py-2 text-2xl md:text-4xl font-bold rounded-xl shadow-lg text-center">
+                    ${minutes}
+                </div>
+                <div  id="ict1second" class="bg-orange-500 text-white px-3 py-2 text-2xl md:text-4xl font-bold rounded-xl shadow-lg text-center">
+                    ${seconds}
+                </div>
+                `;
+            }
+            
+            updateCountdown();
+            setInterval(updateCountdown, 1000);
+        }
+
+        exams.forEach(startCountdown);
+    </script>
+</body>
+</html>
